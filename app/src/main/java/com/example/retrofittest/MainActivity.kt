@@ -42,7 +42,6 @@ class MainActivity : AppCompatActivity() {
 
 
         })
-
         
     }
 
@@ -88,6 +87,7 @@ class MainActivity : AppCompatActivity() {
             holder.movieDescription.text = movies.movies[position].summary
             holder.rating.text = movies.movies[position].rating
             //Picasso.with(context).load(movies.movies[position].image).into(holder.image)
+            Picasso.get().load(movies.movies[position].image).into(holder.image)
         }
 
     }
