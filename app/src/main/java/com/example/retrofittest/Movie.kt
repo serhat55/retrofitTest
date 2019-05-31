@@ -19,7 +19,7 @@ class Movie {
     @SerializedName("summary")
     val summary: String? = null
 
-    @SerializedName("image")
+    @SerializedName("small_cover_image")
     val image: String? = null
 
 }

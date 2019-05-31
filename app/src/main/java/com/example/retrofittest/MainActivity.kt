@@ -14,6 +14,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.list_item_movie.view.*
 import retrofit2.Call
 import retrofit2.Response
 
@@ -87,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             holder.movieDescription.text = movies.movies[position].summary
             holder.rating.text = movies.movies[position].rating
             //Picasso.with(context).load(movies.movies[position].image).into(holder.image)
-            Picasso.get().load(movies.movies[position].image).into(holder.image)
+            Picasso.get().load(movies.movies.get(position).image).into(holder.image)
         }
 
     }
